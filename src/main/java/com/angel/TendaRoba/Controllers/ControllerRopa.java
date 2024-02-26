@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class ControllerRopa {
     private final RopaRepository ropaRepository;
 

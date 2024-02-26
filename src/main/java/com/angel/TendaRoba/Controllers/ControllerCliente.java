@@ -6,12 +6,10 @@ import com.angel.TendaRoba.Interfaces.ClienteRepository;
 import com.angel.TendaRoba.Interfaces.DireccionRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class ControllerCliente {
     private final ClienteRepository clienteRepository;
 
