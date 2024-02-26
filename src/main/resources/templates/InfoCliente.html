@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Info Cliente</title>
+    <link rel="stylesheet" type="text/css" href="/css/detalls.css">
+</head>
+<body>
+<h1>Info Cliente</h1>
+<ul>
+    <li th:each="cliente : ${clientes}" th:text="${clientes.getId()}"></li>
+    <li th:each="cliente : ${clientes}" th:text="${clientes.getNombre()}"></li>
+    <li th:each="cliente : ${clientes}" th:text="${clientes.getApellidos()}"></li>
+    <li th:each="cliente : ${clientes}" th:text="${clientes.getNacionalidad()}"></li>
+
+
+
+
+</ul>
+</body>
+</html>

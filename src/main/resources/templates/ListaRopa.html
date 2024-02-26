@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Llista de Roba</title>
+    <link rel="stylesheet" type="text/css" href="/css/llistat.css">
+</head>
+<body>
+<h1>---------Llista de la Roba---------</h1>
+<ul>
+    <li th:each="ropa : ${ropas}" th:text="${ropa.getModelo()}"></li>
+</ul>
+</body>
+</html>

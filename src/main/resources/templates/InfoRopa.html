@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Info Ropa</title>
+    <link rel="stylesheet" type="text/css" href="/css/detalls.css">
+</head>
+<body>
+<h1>Info Ropa</h1>
+<ul>
+    <li th:each="ropa : ${ropas}" th:text="${ropa.getId()}"></li>
+    <li th:each="ropa : ${ropas}" th:text="${ropa.getMarca()}"></li>
+    <li th:each="ropa : ${ropas}" th:text="${ropa.getModelo()}"></li>
+    <li th:each="ropa : ${ropas}" th:text="${ropa.getTalla()}"></li>
+    <img th:each="ropa : ${ropas}" th:src="${ropa.getUrlimagen()}" alt="Imagen de Ropa">
+
+</ul>
+</body>
+</html>

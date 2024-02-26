@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Info Direccion</title>
+    <link rel="stylesheet" type="text/css" href="/css/detalls.css">
+</head>
+<body>
+<h1>Info Direccion</h1>
+<ul>
+    <li th:each="direccion : ${direcciones}" th:text="${direcciones.getCiudad()}"></li>
+    <li th:each="direccion : ${direcciones}" th:text="${direcciones.getProvincia()}"></li>
+    <li th:each="direccion : ${direcciones}" th:text="${direcciones.getDirec()}"></li>
+
+
+</ul>
+</body>
+</html>

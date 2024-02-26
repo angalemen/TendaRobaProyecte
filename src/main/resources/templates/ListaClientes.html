@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Llista Cliente</title>
+    <link rel="stylesheet" type="text/css" href="/css/llistat.css">
+</head>
+<body>
+<h1>---------Llista Cliente---------</h1>
+<ul>
+    <li th:each="cliente : ${clientes}" th:text="${cliente.getId()}"></li>
+</ul>
+</body>
+</html>

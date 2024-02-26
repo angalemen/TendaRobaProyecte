@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Llista de Tiendas</title>
+    <link rel="stylesheet" type="text/css" href="/css/llistat.css">
+</head>
+<body>
+<h1>---------Llista de Tendes---------</h1>
+<ul>
+    <li th:each="tienda : ${tiendas}" th:text="${tienda.getNombre()}"></li>
+</ul>
+</body>
+</html>

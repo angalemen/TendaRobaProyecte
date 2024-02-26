@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Llista Direccio</title>
+    <link rel="stylesheet" type="text/css" href="/css/llistat.css">
+</head>
+<body>
+<h1>---------Llista Direccions---------</h1>
+<ul>
+    <li th:each="direccion : ${direciones}" th:text="${direccion.getCiudad()}"></li>
+</ul>
+</body>
+</html>
