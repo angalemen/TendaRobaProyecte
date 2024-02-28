@@ -1,4 +1,4 @@
-package com.angel.TendaRoba.Segurity;
+package com.angel.TendaRoba;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
