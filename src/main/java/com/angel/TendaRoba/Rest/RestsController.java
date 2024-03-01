@@ -26,22 +26,22 @@ public class    RestsController {
     TiendaRepository tiendaRepository;
     @Autowired
     TiendaRopaRepository tiendaRopaRepository;
-    @GetMapping("/ropas")
+    @GetMapping("/ropaRes")
     public List<Ropa> llistaropa() {
         return (List<Ropa>) ropaRepository.findAll();
     }
 
-    @GetMapping("/tiendas")
+    @GetMapping("/tiendaRes")
     public List<Tienda> llistatienda() {
         return (List<Tienda>) tiendaRepository.findAll();
     }
 
-    @GetMapping("/direccions")
+    @GetMapping("/direccionRes")
     public List<Direccion> llistadireccio() {
         return (List<Direccion>) direccionRepository.findAll();
     }
 
-    @GetMapping("/clientes")
+    @GetMapping("/clienteRes")
     public List<Direccion> llistatcliente() {
         return (List<Direccion>) direccionRepository.findAll();
     }

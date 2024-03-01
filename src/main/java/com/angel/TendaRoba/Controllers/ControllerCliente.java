@@ -23,7 +23,6 @@ public class ControllerCliente {
         model.addAttribute("clientes", clientes);
         return "ListaClientes";
     }
-
     @GetMapping("/cliente/{id}")
     public String clienteDetalls(@PathVariable int id, Model model){
         Cliente clientes= clienteRepository.findById(id).
@@ -31,6 +30,4 @@ public class ControllerCliente {
         model.addAttribute("clientes", clientes);
         return "InfoCliente";
     }
-
-
 }

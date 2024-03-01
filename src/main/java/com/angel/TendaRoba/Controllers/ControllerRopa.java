@@ -22,7 +22,6 @@ public class ControllerRopa {
         model.addAttribute("ropas", ropas);
         return "ListaRopa";
     }
-
     @GetMapping("/ropa/{id}")
     public String ropaDetalls(@PathVariable int id, Model model){
         Ropa ropa= ropaRepository.findById(id).
@@ -30,6 +29,4 @@ public class ControllerRopa {
         model.addAttribute("ropas", ropa);
         return "InfoRopa";
     }
-
-
 }
